@@ -3,20 +3,17 @@ package com.lazerycode.selenium.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.lazerycode.selenium.DriverBase;
-import com.lazerycode.selenium.page_objects.GoogleHomePage;
-import com.lazerycode.selenium.util.Query;
 
 public class SeleniumSimpleIT extends DriverBase {
 	
     @Test
     public void googleTitleTest() throws Exception {
-    	RemoteWebDriver driver = DriverBase.getDriver();
+    	WebDriver driver = getDriver();
 
         driver.navigate().to("http://www.google.com");
     
@@ -25,7 +22,7 @@ public class SeleniumSimpleIT extends DriverBase {
     
     @Test
     public void googleSearchMilk() throws Exception {
-    	RemoteWebDriver driver = DriverBase.getDriver();
+    	WebDriver driver = getDriver();
 
         driver.navigate().to("http://www.google.com");
         
