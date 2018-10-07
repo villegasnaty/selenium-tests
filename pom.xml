@@ -168,6 +168,10 @@
                                 <webdriver.opera.driver>${webdriver.opera.driver}</webdriver.opera.driver>
                                 <webdriver.gecko.driver>${webdriver.gecko.driver}</webdriver.gecko.driver>
                                 <webdriver.edge.driver>${webdriver.edge.driver}</webdriver.edge.driver>
+                                
+                                <!-- Eclipse fix: Comment the above, uncomment this part
+                                <webdriver.gecko.driver>${project.basedir}/src/test/resources/selenium_standalone_binaries/windows/marionette/64bit/geckodriver.exe</webdriver.gecko.driver>
+                                -->
                             </systemPropertyVariables>
                         </configuration>
                         <executions>
