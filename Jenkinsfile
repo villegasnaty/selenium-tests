@@ -1,8 +1,6 @@
 pipeline {
     agent any
      stages {
-
-        }
         stage('Run local container') {
                   agent any
                   steps {
@@ -17,6 +15,6 @@ pipeline {
 
                             }
                         }
-
+    }
 }
 
